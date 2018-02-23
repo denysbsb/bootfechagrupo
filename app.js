@@ -22,7 +22,7 @@ function getAllGroups() {
     var GRAPH_URL_GROUPS= 'https://graph.facebook.com/community/groups';
     rp({
         url: GRAPH_URL_GROUPS,
-        proxy: proxyMaquina,
+        // proxy: proxyMaquina,
         headers: {
             Authorization: 'Bearer ' + access_token
         },
@@ -94,7 +94,7 @@ function editagrupo(id) {
     rp({
         url: url,
         method: 'POST',
-        proxy: proxyMaquina,
+        // proxy: proxyMaquina,
         headers: {
             Authorization: 'Bearer ' + access_token
         },
@@ -115,7 +115,7 @@ function enviaMensagemFeed(id) {
       rp({
           url: url,
           method: 'POST',
-          proxy: proxyMaquina,
+        //   proxy: proxyMaquina,
           headers: {
               Authorization: 'Bearer ' + access_token,
               'Content-Type': 'application/json'
